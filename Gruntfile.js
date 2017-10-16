@@ -110,6 +110,7 @@ module.exports = function(grunt) {
     //grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask('build:css', ['scsslint:dev', 'sass:dev']);
+    grunt.registerTask('build:no-lint', ['sass:dev']);
     grunt.registerTask('default', ['build:css']);
     grunt.registerTask('watcher', ['watch']);
     // grunt.registerTask('build:js', ['jshint:beforeconcat', 'concat:js', 'jshint:afterconcat','uglify:viewScripts']);
