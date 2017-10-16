@@ -1,0 +1,106 @@
+
+
+// main nav items
+
+.main-nav {
+// nav.main-nav
+
+    /*background-color: #fc0;
+
+    @include breakpoint(xs) {
+        // black
+        background-color: #000;
+    }
+
+    @include breakpoint(sm) {
+        // blue
+        background-color: #00f;
+    }
+
+
+    @include breakpoint(md) {
+        // green
+        background-color: #0f0;
+    }
+
+    @include breakpoint(lg) {
+        // red
+        background-color: #f00;
+    }
+
+    @include breakpoint(xl) {
+        // grey
+        background-color: #6f777b;
+    }*/
+
+    &__list {
+
+        // ul.main-nav__links
+        text-align: center;
+
+        @include breakpoint(md) {
+            text-align: right;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
+
+    &__links {
+        display: block;
+        color: $grey-1;
+        padding: 4px 10px;
+        margin-top: 10px;
+        background-size: 100% 200%;
+        background-image: linear-gradient(to bottom, $white 50%, $exd-yellow 50%);
+        -webkit-transition: background-position .2s;
+        -moz-transition: background-position .2s;
+        transition: background-position .2s;
+
+        &.slctd,
+        &:hover,
+        &:focus {
+            color: $black;
+            background-position: 0 -100%;
+        }
+    }
+}
+
+// Logo
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 240px;
+    height: 100px;
+    background-color: $exd-yellow;
+    margin: 0 auto;
+
+    @include breakpoint(md) {
+        margin: 0;
+    }
+
+    &__text {
+        display: block;
+        text-align: center;
+        line-height: 56px;
+        color: $white;
+        font-size: 48px;
+        font-weight: 400;
+        width: 100%;
+
+        .small & {
+            line-height: 48px;
+            font-size: 24px;
+        }
+    }
+
+    .small & {
+        width: 120px;
+        height: 50px;
+    }
+}
+

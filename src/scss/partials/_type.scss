@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100;300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+
+%text-light {
+    font-weight: 100;
+}
+
+%text-regular {
+    font-weight: 400;
+}
+
+%text-bold {
+    font-weight: 400;
+}
+
+%text-heavy {
+        font-weight: 700;
+}
+
+%type-straight {
+    font-family: 'Roboto', sans-serif;
+}
+
+%type-fancy {
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    @extend %text-regular;
+    @extend %type-straight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @extend %type-fancy;
+    @extend %text-heavy;
+
+}
+
+.lede {
+    @extend %type-fancy;
+    @extend %text-regular;
+    font-size: 1.5rem;
+}
+
+
+

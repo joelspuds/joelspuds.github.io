@@ -1,12 +1,28 @@
 ---
-layout: default
+layout: compress
 ---
+{% include head.html %}
 
-<article class="page">
+    <div class="grid grid--container">
 
-  <h1>{{ page.title }}</h1>
+        <div class="row">
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+            <div class="col col--md-12">
+
+
+
+                   {{ content }}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // console.log($(window).width);
+    </script>
+
+{% include footer.html %}
+

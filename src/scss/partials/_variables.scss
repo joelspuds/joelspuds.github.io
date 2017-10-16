@@ -1,0 +1,58 @@
+// Standard palette, greys
+$black: #0b0c0c;
+$grey-1: #6f777b;
+$grey-2: #bfc1c3;
+$grey-3: #dee0e2;
+$grey-4: #f8f8f8;
+$white: #fff;
+
+// More actual colours
+$exd-yellow: #fc0;
+$white: #fff;
+
+// Layout related measurements
+$rounded-radius: 4px;
+
+$breakpoint-xs: 0;
+$breakpoint-sm: 544px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// $max-width: $breakpoint-xl;
+$max-width: $breakpoint-md;
+
+$space: 5px;
+$space-class-values: (5, 10, 15, 30, 45);
+
+$breakpoints: (
+        xs : $breakpoint-xs,
+        sm : $breakpoint-sm,
+        md : $breakpoint-md,
+        lg : $breakpoint-lg,
+        xl : $breakpoint-xl
+) !default;
+
+
+@mixin breakpoint($point) {
+    @if $point == xl {
+        // desktop
+        @media (min-width: $breakpoint-xl) { @content; }
+
+    } @else if $point == lg {
+        // laptop
+        @media (min-width: $breakpoint-lg) { @content ; }
+
+    } @else if $point == md {
+        // tablet
+        @media (min-width: $breakpoint-md) { @content ; }
+
+    } @else if $point == sm {
+        // phablet
+        @media (min-width: $breakpoint-sm)  { @content ; }
+
+    } @else if $point == xs {
+        // mobileonly
+        @media (max-width: $breakpoint-xs)  { @content ; }
+    }
+}
