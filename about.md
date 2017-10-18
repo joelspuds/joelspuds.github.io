@@ -5,9 +5,16 @@ permalink: /about/
 ---
 # About
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vestibulum eleifend augue et aliquam. Aenean vel lacus euismod, finibus nisi ut, posuere felis. Mauris suscipit eros id enim dictum venenatis. Aenean venenatis molestie tellus nec gravida. Sed feugiat et dui eu dignissim. Praesent congue malesuada lacus non tincidunt. 
+<div class="row">
+    <div class="col col--xs-4 col--sm-4">
+        <img src="/assets/img/me-rounded.jpg" width="150" height="150" alt="Mugshot of your truly">
+    </div>
+    <div class="col col--xs-8 col--sm-8">
+        <p class="_lede">I am a freelance front-end web developer and UX/UI designer based in sunny Somerset. I have worked in the "web industry" since around 2000, starting off as a digital producer for a scientific publishing house in London. Along the way I’ve worked for various agencies as a permanent member of staff or a contractor in dev teams, as a designer and occasionally in management.</p>
+    </div>
+</div>
 
-## Heading two
+## Heading two 
 
 Vestibulum quis semper odio, a consectetur ligula. Vestibulum convallis eros non dui commodo bibendum. Mauris iaculis laoreet erat. 
 

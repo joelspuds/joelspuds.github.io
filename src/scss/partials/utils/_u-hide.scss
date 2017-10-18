@@ -5,14 +5,21 @@
 
 // Was 768/large & 767/small, now 640px!
 .u-hide {
+
     &-large {
+
         @include media(false, false, 640px) {
             display: none !important;
         }
+
     }
+
     &-small {
+
         @include media(false, 639px) {
             display: none;
         }
+
     }
+
 }

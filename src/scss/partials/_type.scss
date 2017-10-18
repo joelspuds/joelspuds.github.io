@@ -14,7 +14,7 @@
 }
 
 %text-heavy {
-        font-weight: 700;
+    font-weight: 700;
 }
 
 %type-straight {
@@ -30,17 +30,49 @@ body {
     @extend %type-straight;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
     @extend %type-fancy;
     @extend %text-heavy;
-
 }
 
 .lede {
     @extend %type-fancy;
     @extend %text-regular;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+
+    @include breakpoint(md) {
+        font-size: 1.5rem;
+    }
 }
 
+.pseudo-heading {
+    @extend %type-fancy;
+    @extend %text-heavy;
+    font-size: 1rem;
 
+    @include breakpoint(md) {
+        font-size: 1.2rem;
+    }
+}
+
+.higlight {
+    // display: inline-block;
+    background-color: $grey-3;
+    // padding: 0 4px;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
 
