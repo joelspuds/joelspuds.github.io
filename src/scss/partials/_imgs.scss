@@ -2,3 +2,10 @@
 .project-thumbs {
     width: 100%;
 }
+
+.project-thumbs {
+
+    @include breakpointz(mobileonly) {
+        margin-bottom: 20px;
+    }
+}

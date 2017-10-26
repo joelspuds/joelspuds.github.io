@@ -1,5 +1,5 @@
-/*
-@mixin breakpoint($point) {
+
+@mixin breakpointz($point) {
     @if $point == desktop {
 
         // @media (min-width: 70em) { @content ; }
@@ -26,4 +26,4 @@
 
     }
 }
-*/
+

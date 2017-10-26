@@ -1,0 +1,107 @@
+// scss-lint:disable VendorPrefix
+// massive home buttons
+.home-buttons {
+    @extend %text-heavy;
+    @extend %type-straight;
+
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 10px;
+    font-size: 24px;
+
+    // color: $grey-1;
+    color: $black;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, $grey-3 50%, $exd-yellow 50%);
+    -webkit-transition: background-position .2s;
+    -moz-transition: background-position .2s;
+    transition: background-position .2s;
+
+    &:hover,
+    &:focus {
+        color: $grey-1;
+
+        background-position: 0 -100%;
+    }
+
+
+}
+
+/*
+body {
+
+    .output1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100px;
+        height: 100px;
+
+        &:after {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            border: 1px solid #f00;
+            content: 'testing';
+
+            @include breakpoint(xs) {
+                content: 'breakpoint(xs)';
+            }
+
+            @include breakpoint(sm) {
+                content: 'breakpoint(sm)';
+            }
+
+            @include breakpoint(md) {
+                content: 'breakpoint(md)';
+            }
+
+            @include breakpoint(lg) {
+                content: 'breakpoint(lg)';
+            }
+        }
+    }
+
+    .output2 {
+        position: fixed;
+        top: 20px;
+        left: 0;
+        z-index: 1001;
+        width: 100px;
+        height: 100px;
+
+        &:after {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 10px;
+            border: 1px solid #0f0;
+            content: 'testing';
+
+            @include breakpointz(mobileonly) {
+                content: 'mobileonly';
+            }
+
+            @include breakpointz(phablet) {
+                content: 'phablet';
+            }
+
+            @include breakpointz(tablet) {
+                content: 'tablet';
+            }
+
+            @include breakpointz(laptop) {
+                content: 'laptop';
+            }
+
+            @include breakpointz(desktop) {
+                content: 'desktop';
+            }
+        }
+    }
+}
+
+*/

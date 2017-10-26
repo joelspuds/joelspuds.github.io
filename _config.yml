@@ -8,6 +8,7 @@ email: info@extradev.co.uk
 description: "Extradev Ltd provide front-end development and UX design services for your Agile project."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+google-analytics: UA-29387077-1
 
 # Build settings
 markdown: kramdown
@@ -17,7 +18,7 @@ gems: ['jekyll-feed']
 compress_html:
   clippings: all
   comments: [""]
-  endings: [html, head, body, li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
+  endings: [li, dt, dd, rt, rp, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
   profile: false
   blanklines: false
   ignore:
