@@ -95,6 +95,20 @@ module.exports = function(grunt) {
                     'assets/js/exd.js': ['assets/js/exd.min.js']
                 }
             }
+        },
+
+        criticalcss: {
+            custom: {
+                options: {
+                    url: "http://localhost:4000",
+                    width: 1200,
+                    height: 900,
+                    outputfile: "assets/css/top.css",
+                    filename: "assets/css/styles.css",
+                    buffer: 800*1024,
+				    ignoreConsole: false
+                }
+            }
         }
     });
 
@@ -107,7 +121,7 @@ module.exports = function(grunt) {
     // grunt.loadNpmTasks('grunt-notify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    //grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-criticalcss');
 
     grunt.registerTask('build:css', ['scsslint:dev', 'sass:dev']);
     grunt.registerTask('build:no-lint', ['sass:dev']);
@@ -115,6 +129,7 @@ module.exports = function(grunt) {
     grunt.registerTask('watcher', ['watch']);
     // grunt.registerTask('build:js', ['jshint:beforeconcat', 'concat:js', 'jshint:afterconcat','uglify:viewScripts']);
     grunt.registerTask('build:js', ['concat:js']);
+    grunt.registerTask('test:css', ['criticalcss']);
 
     // Build assets from src files
     // grunt.registerTask('build:css', ['scsslint:dev', 'sass:dev']);
