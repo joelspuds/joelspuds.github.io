@@ -1,17 +1,29 @@
 ---
 layout: compress
 ---
-<!--{!% include head.html %}-->
-<!--<div class="output1"></div>
-<div class="output2"></div>-->
-    <div class="grid grid--container">
+{% include head.html %}
 
-        extradev.co.uk
+<div class="grid grid--container">
+
+    {% include introduction.html %}
+
+
+    <div class="row">
+
+        <div class="col col--xs-12 col--sm-4">
+            <a href="/about" class="home-buttons">Stuff about me</a>
+        </div>
+
+        <div class="col col--xs-12 col--sm-4">
+            <a href="/work" class="home-buttons">Work info</a>
+        </div>
+
+        <div class="col col--xs-12 col--sm-4">
+            <a href="/contact" class="home-buttons">Get in touch</a>
+        </div>
 
     </div>
 
-    <script>
-        // console.log($(window).width);
-    </script>
+</div>
 
-<!--{!% include footer.html %}-->
+{% include footer.html %}
